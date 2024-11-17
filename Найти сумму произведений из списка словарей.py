@@ -3,14 +3,13 @@ import json
 
 def task() -> float:
     """
-    Функция вычисляет сумму произведений значений "score" и "weight"
-    в каждом словаре JSON файла.
+        Функция вычисляет сумму произведений значений "score" и "weight"
+        в каждом словаре JSON файла.
 
-    Returns:
-        float: Сумма произведений, округлённая до 3 знаков после запятой.
-    """
-
-    with open('task.json', 'r') as f:
+        Returns:
+            float: Сумма произведений, округлённая до 3 знаков после запятой.
+        """
+    with open('input.json', 'r') as f:
         data = json.load(f)
 
     total_sum = 0
